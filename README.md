@@ -24,13 +24,11 @@ This project allows users to **add, view, mark as done, and delete tasks** direc
 
 ## 📂 Project Structure
 Java-ToDo-List/
-│
-├── src/                    # Java source files
-│   ├── DBConnection.java
-│   ├── TaskManager.java
-│   ├── Main.java
-│
-├── README.md               # Project documentation
+src/DBConnection.java
+src/TaskManager.java
+src/Main.java
+README.md
+
 
 
 ---
