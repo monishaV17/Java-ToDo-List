@@ -40,7 +40,7 @@ public class Main{
                         s.close();
                         return;
                     default:
-                        System.out.println("Invalid choice. Try again.");
+                        System.out.println("Invalid Choice. Try Again!");
                 }
             }
         } catch(Exception e){
