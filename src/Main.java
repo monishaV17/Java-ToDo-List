@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         Scanner s=new Scanner(System.in);
-        TaskManager manager=new TaskManager();
+        TaskManager t=new TaskManager();
         try(Connection con=DBConnection.getConnection()){
             if(con==null){
                 System.out.println("Database connection failed!");
@@ -24,16 +24,16 @@ public class Main{
 
                 switch(choice){
                     case 1:
-                        manager.addTask(con,s);
+                        t.addTask(con,s);
                         break;
                     case 2:
-                        manager.viewTasks(con);
+                        t.viewTasks(con);
                         break;
                     case 3:
-                        manager.markAsDone(con,s);
+                        t.markAsDone(con,s);
                         break;
                     case 4:
-                        manager.deleteTask(con,s);
+                        t.deleteTask(con,s);
                         break;
                     case 5:
                         System.out.println("Exiting...");
